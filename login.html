@@ -8,7 +8,7 @@
 </head>
 <body>
      <header>
-        <div class="logo"><a href="index.html"><img src="assests/logo.jpg" alt=" Logo" ></a></div>
+        <div class="logo"><a href="index.html"><img src="assets/lf logo.webp" alt=" Logo" ></a></div>
         <h1>University Lost & Found Portal</h1>
         <nav class="nav-bar">
             <ul>
@@ -18,13 +18,19 @@
         </nav>
     </header>
     <div class="form-container">
-        <h2>Login</h2>
+        
+        <div class="form-banner">
+    <div class="form-icon"></div>
+    <h2>Welcome back!</h2>
+    <p>log in to your account.</p>
+</div>
         <form>
             <label>Email</label>
             <input type="email" required>
             <label>Password</label>
             <input type="password" required>
-            <button type="submit">Log In</button>
+            <a href="#" class="forgot-password">Forgot password?</a>
+            <button type="submit" onclick="window.location.href='dashboard.html'">Log In</button>
         </form>
         <p>Don’t have an account? <a href="signup.html">Sign Up</a></p>
     </div>
