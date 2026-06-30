@@ -1,12 +1,12 @@
 # University Lost & Found Portal
 
-A web-based platform designed to bridge the gap between people who have lost items and those who have found them. This project features a dual-sided dashboard where finders can report items they've found and claimants can search for and claim their missing belongings.
+A web-based platform designed to bridge the gap between people who have lost items and those who have found them. This project features a dual-sided dashboard where finders can report items they've found and claimants can search for and claim their missing belongings .
 
 ---
 
 ##  Project Overview
 
-The **University Lost & Found Portal** is a front-end web application built as part of a Web Design Assignment. It provides a clean, user-friendly interface that helps university students and staff reconnect with their lost belongings quickly and efficiently.
+The **University Lost & Found Portal** is a front-end web application built as part of a Web Design Assignment. It provides a clean, user-friendly interface that helps university students and staff reconnect with their lost belongings quickly and efficiently .
 
 ---
 
