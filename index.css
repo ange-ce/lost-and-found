@@ -28,6 +28,14 @@ header {
 .nav-bar {
     justify-content: space-between;
     display: flex;
+    align-items: center;
+}
+
+.nav-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
 }
 
 .nav-bar ul {
@@ -54,6 +62,23 @@ header {
     background-color: white;
     color: black;
 }
+#theme-btn{
+    padding:10px 18px;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    background:#4d7cff;
+    color:white;
+}
+
+#theme-btn:hover{
+    background:#315dd4;
+}
+
+body.light-mode #theme-btn{
+    background:#1d2340;
+    color:white;
+}
 
 #filter {
     width: 200px;
@@ -63,7 +88,27 @@ header {
     color:rgb(44, 44, 44);
     
 }
+#date{
+    font-size:13px;
+    color:#c8d0ff;
+}
 
+#clock{
+    font-size:18px;
+    font-weight:bold;
+    color:#8ddfff;
+}
+
+body.light-mode #date,
+body.light-mode #clock{
+    color:#1d2340;
+}
+
+.greeting{
+    margin-top:12px;
+    font-size:20px;
+    color:#c8d0ff;
+}
 
 .hero {
     text-align: center;
@@ -73,40 +118,7 @@ header {
     font-size: 36px;
 
 }
-/* Hero subtitle */
-.hero-subtitle {
-    font-size: 16px;
-    color: #8890bb;
-    margin-top: 12px;
-}
 
-/* Stats bar */
-.stats-bar {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-    background: #2e2e7a;
-    padding: 20px 40px;
-    text-align: center;
-    gap: 10px;
-}
-
-.stat {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0;
-}
-
-.stat-number {
-    font-size: 28px;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.stat-label {
-    font-size: 13px;
-    color: #c8d0ff;
-    margin-top: 4px;
-}
 
 #cards {
     display: grid;
@@ -155,6 +167,61 @@ header {
 #card1 { background-image: url('assets/lost.png'); }
 #card2 { background-image: url('assets/worried.png'); }
 #card3 { background-image: url('assets/found.png'); }
+
+body.light-mode {
+    background-color: #f2f2f8;
+    color: #1d2340;
+}
+
+body.light-mode header {
+    background: #eef0ff;
+    color: #1d2340;
+}
+
+body.light-mode .nav-bar a {
+    color: #1d2340;
+    border-color: #1d2340;
+}
+
+body.light-mode .nav-bar a:hover {
+    background-color: #1d2340;
+    color: white;
+}
+
+body.light-mode .hero {
+    background: #e8e9ff;
+    color: #1d2340;
+}
+
+body.light-mode .card {
+    color: #1d2340;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.8);
+}
+body.light-mode .hero-subtitle{
+    color:#4f5b88;
+}
+
+body.light-mode .card button a {
+    color: white;
+    background: #2c5a8f;
+}
+
+body.light-mode .form-container {
+    background: #ffffff;
+    color: #1d2340;
+}
+
+body.light-mode footer {
+    background: #eef0ff;
+    color: #1d2340;
+}
+body.light-mode .footer-col a{
+    color:#1d2340;
+}
+
+body.light-mode .footer-bottom p{
+    color:#555;
+}
 
 footer {
     background: #111;
@@ -208,47 +275,7 @@ footer {
     cursor: pointer;
     transition: 0.3s;
 }
-/* Form banner (top section of the card) */
-.form-banner {
-    background: #1a1a4e;
-    margin: -36px -30px 24px -30px;
-    padding: 28px 24px 24px;
-    border-radius: 12px 12px 0 0;
-    text-align: center;
-    color: white;
-}
 
-.form-icon {
-    font-size: 32px;
-    margin-bottom: 10px;
-}
-
-.form-banner h2 {
-    color: #c8d0ff;
-    font-size: 22px;
-    margin-bottom: 6px;
-}
-
-.form-banner p {
-    color: #8890bb;
-    font-size: 13px;
-    margin: 0;
-}
-.forgot-password {
-    display: block;
-    text-align: right;
-    font-size: 13px;
-    color: #7eb8d4;
-    text-decoration: none;
-    margin-bottom: 14px;
-    margin-top: 6px;
-    transition: color 0.3s;
-}
-
-.forgot-password:hover {
-    color: white;
-    text-decoration: underline;
-}
 .form-container button:hover {
     background: white;
     color: black;
