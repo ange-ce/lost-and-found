@@ -42,6 +42,19 @@ header {
 .lf-header-right {
   display: flex;
   align-items: center;
+  gap: 16px;
+}
+
+#date {
+  font-size: 13px;
+  color: #c8d0ff;
+}
+
+#clock {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: white;
 }
 
 .lf-notifications {
@@ -270,3 +283,4 @@ footer {
   align-items: center;
   font-size: 13px;
 }
+
