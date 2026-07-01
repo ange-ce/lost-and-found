@@ -1,0 +1,57 @@
+
+<!DOCTYPEhtml>
+<html>
+ <head>
+ <title> employees net salary </title>
+ </head>
+ 
+ <body style="background-color:lightblue;">
+ <h2 style="text-align:center;">Employee net salary</h2>
+ <p id="date" style="text-align:center;"></p>
+
+
+
+ <table border="1" style="border-collapse:collapse; 
+ width:70%;
+ margin:auto;
+ text-align:center;
+ background-color:white;">
+ 
+ <tr>
+ <th>Employee name</th>
+ <th>Salary</th>
+ <th>tax(%)</th>
+ <th>net salary</th>
+ </tr>
+ 
+ <tbody id="result"></tbody>
+ 
+ </table>
+ 
+ 
+ <script>
+ 
+ let number = parseInt(prompt("enter number of employees:"));
+ 
+ for(let i=1;i<=number;i++){
+ 
+ let name = prompt("enter employee name:");
+ let salary = parseFloat(prompt("enter employee salary:"));
+ let tax = parseFloat(prompt("enter tax (in %)  :"));
+ 
+ let netsalary = salary-(salary*tax/100);
+ 
+ document.getElementById("result").innerHTML +=
+ "<tr>" +
+ "<td>" + name +"</td>" +
+ "<td>" + salary +"</td>" +
+ "<td>" + tax + "</td>" +
+ "<td>" + netsalary + "</td>" +
+ "</tr>";
+ }
+ document.getElementById("date").innerHTML =  "Date: " + new Date().toLocaleDateString();
+ 
+ </script>
+  
+ </body>
+ </html>
