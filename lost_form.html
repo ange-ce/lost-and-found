@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Lost Item</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="assests/logo.jpg" alt="Lost and Found Logo"></a>
+        </div>
+        <h1>Report a Lost Item</h1>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <section class="form-hero">
+            <span class="form-badge">Lost item report</span>
+            <h2>Tell us what you misplaced</h2>
+            <p>Share a few details so our team can help you search faster and keep the process simple.</p>
+        </section>
+
+        <section class="form-card">
+            <div class="form-card-header">
+                <div>
+                    <h3>Item details</h3>
+                    <p>Fields marked with <span class="required">*</span> are required.</p>
+                </div>
+                <span class="step-pill">Quick form</span>
+            </div>
+
+            <form class="styled-form" id="lost-report-form">
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="full-name">Full name <span class="required">*</span></label>
+                        <input id="full-name" name="full-name" type="text" placeholder="Jason Statham" required>
+                    </div>
+                    <div class="field">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="item-name">Item name <span class="required">*</span></label>
+                        <input id="item-name" name="item-name" type="text" placeholder="Black laptop bag" required>
+                    </div>
+                    <div class="field">
+                        <label for="category">Category <span class="required">*</span></label>
+                        <select id="category" name="category">
+                            <option>Electronics</option>
+                            <option>Clothing</option>
+                            <option>Accessories</option>
+                            <option>Documents</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-grid">
+                    <div class="field">
+                        <label for="location">Last seen location <span class="required">*</span></label>
+                        <input id="location" name="location" type="text" placeholder="Library lobby" required>
+                    </div>
+                    <div class="field">
+                        <label for="lost-date">Date lost <span class="required">*</span></label>
+                        <input id="lost-date" name="lost-date" type="date" required>
+                    </div>
+                </div>
+
+                <div class="field field-wide">
+                    <label for="details">Description <span class="required">*</span></label>
+                    <textarea id="details" name="details" rows="4" placeholder="Describe the item, any identifying marks, and where it was last seen." required></textarea>
+                    <p class="field-help">The more detail you give, the easier it is to match the item.</p>
+                </div>
+
+                <p id="lost-form-status" class="form-status" aria-live="polite"></p>
+                <button type="submit">Submit lost report</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+</html>

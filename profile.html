@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Profile</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f9;
+      color: #222;
+    }
+    .page {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 24px;
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(0,0,0,0.08);
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 16px;
+      color: #0b63d6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .profile-form {
+      display: grid;
+      gap: 14px;
+      margin-top: 20px;
+    }
+    .form-row {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    label {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      font-weight: 600;
+      color: #333;
+    }
+    input, textarea {
+      padding: 10px 12px;
+      border: 1px solid #cfd8e3;
+      border-radius: 10px;
+      font: inherit;
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    button {
+      justify-self: start;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 999px;
+      background: #0b63d6;
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .form-status {
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: #f1f5f9;
+      color: #334155;
+      margin-top: 6px;
+    }
+    .form-status.success {
+      background: #e8f8ee;
+      color: #1f7a3d;
+    }
+    @media (max-width: 700px) {
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <a href="dashboard.html" class="back-link">← Back to Dashboard</a>
+    <h1>Manage Profile</h1>
+    <p>Update your account details and personal preferences here.</p>
+
+    <form id="profile-form" class="profile-form">
+      <div class="form-row">
+        <label>
+          Full name
+          <input type="text" name="fullName" placeholder="Your full name">
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" placeholder="you@example.com">
+        </label>
+      </div>
+
+      <div class="form-row">
+        <label>
+          Phone number
+          <input type="tel" name="phone" placeholder="07xxxxxxxx">
+        </label>
+        <label>
+          Department
+          <input type="text" name="department" placeholder="Computer Science">
+        </label>
+      </div>
+
+      <label>
+        Bio
+        <textarea name="bio" placeholder="Tell us a bit about yourself"></textarea>
+      </label>
+
+      <button type="submit">Save profile</button>
+      <div id="profile-status" class="form-status" aria-live="polite">Your profile is stored locally in this browser.</div>
+    </form>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+</html>

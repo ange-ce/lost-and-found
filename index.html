@@ -6,72 +6,125 @@
     <title>University Lost & Found Portal</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    
-    <header>
-        <div class="logo"><img src="assets/logo.webp" alt="University Lost and Found logo"></div>
-        <h1>University Lost & Found Portal</h1>
-        <nav class="nav-bar">
 
-            <ul>
-                <li><a href="login.html">Log In</a></li>
-                <li><a href="signup.html">Sign Up</a></li>
-            </ul>
-            <div class="nav-actions">
-                <div id="date"></div>
-                <div id="clock"></div>
-                <button id="theme-btn">🌞 switch to light</button>
-            </div>
-        </nav>
-    </header>
+<header>
 
+    <div class="logo">
+        <img src="assests/logo.jpg" alt="University Lost and Found Logo">
+    </div>
+
+    <h1>University Lost & Found Portal</h1>
+
+    <nav class="nav-bar">
+
+        <ul>
+            <li><a href="login.html">Log In</a></li>
+            <li><a href="signup.html">Sign Up</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <div id="date"></div>
+            <div id="clock"></div>
+            <button id="theme-btn">Switch to Light</button>
+        </div>
+
+    </nav>
+
+</header>
+
+<main>
 
     <section class="hero">
+
         <h1><i>Welcome to the University Lost & Found System</i></h1>
+
         <div id="greeting" class="greeting"></div>
+
     </section>
 
-    
     <section id="cards">
+
         <div id="card1" class="card">
-            <h2>Found someone’s lost item?</h2>
-            <button><a href="signup.html">Report It</a></button>
+
+            <img class="card-image" src="assests/lost.png" alt="Lost Item">
+
+            <h2>Found someone's lost item?</h2>
+
+            <button>
+                <a href="signup.html">Report It</a>
+            </button>
+
         </div>
+
         <div id="card2" class="card">
+
+            <img class="card-image" src="assests/worried.png" alt="Worried Person">
+
             <h2>Worried about your lost belongings?</h2>
-            <button><a href="login.html">Join Us to Find It</a></button>
+
+            <button>
+                <a href="login.html">Join Us to Find It</a>
+            </button>
+
         </div>
+
         <div id="card3" class="card">
+
+            <img class="card-image" src="assests/found.png" alt="Found Item">
+
             <h2>Did you find your item?</h2>
-            <button><a href="login.html">Call the Finder</a></button>
+
+            <button>
+                <a href="login.html">Call the Finder</a>
+            </button>
+
         </div>
+
     </section>
 
-    <footer>
-        
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>university lost & found</h4>
-                <p>help students reconnect with their lost belongings</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick links</h4>
-                 <p><a href="index.html">Home</a></p>
-                 <p><a href="signup.html">Report an Item</a></p>
-                 <p><a href="login.html">Log In</a></p>
-            </div>
-            <div class="footer-col">
-                <h4>contact</h4>
-                <p>lostfound@university.ac</p>
-                <p>campus security officer</p>
-                <p>mon-fri , 8am - 5pm</p>
-            </div>
+</main>
+
+<footer>
+
+    <div class="footer-grid">
+
+        <div class="footer-col">
+            <h4>University Lost & Found</h4>
+            <p>Helping students reconnect with their lost belongings.</p>
         </div>
-        <div class="footer-bottom">
-           <p>Designed by Ange Chanella Gihozo | Web Design Assignment</p>
-           <p>&copy; 2026 university portal </p>
+
+        <div class="footer-col">
+            <h4>Quick Links</h4>
+
+            <p><a href="index.html">Home</a></p>
+            <p><a href="signup.html">Report an Item</a></p>
+            <p><a href="login.html">Log In</a></p>
         </div>
-    </footer>
-    <script src="javascript.js"></script>
+
+        <div class="footer-col">
+            <h4>Contact</h4>
+
+            <p>lostfound@university.ac</p>
+            <p>Campus Security Office</p>
+            <p>Monday - Friday | 8:00 AM - 5:00 PM</p>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+
+        <p>Designed by Ange Chanella Gihozo | Web Design Assignment</p>
+
+        <p>&copy; 2026 University Portal</p>
+
+    </div>
+
+</footer>
+
+<script src="javascript.js"></script>
+
 </body>
 </html>

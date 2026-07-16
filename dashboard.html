@@ -14,7 +14,7 @@
 
   <div class="lf-header-left">
     <div class="lf-logo">
-      <img src="assets/logo.webp" alt="logo">
+      <img src="assests/logo.jpg" alt="logo">
     </div>
     <div class="lf-title">Lost & Found Dashboard</div>
   </div>
@@ -51,36 +51,31 @@
     <h3>Dashboard Menu</h3>
 
     <div class="sidebar-card">
-      <button>Report Lost Item</button>
+      <button type="button" onclick="window.location.href='lost_form.html'">Report Lost Item</button>
       <p>Report items you have lost so we can help you find them quickly.</p>
     </div>
 
     <div class="lf-divider"></div>
 
     <div class="sidebar-card">
-      <button>Report Found Item</button>
+      <button type="button" onclick="window.location.href='found_form.html'">Report Found Item</button>
       <p>Report items you found to help return them to their owners.</p>
     </div>
 
     <div class="lf-divider"></div>
 
-    <div class="sidebar-card">
-      <div class="lf-search-input">
-        <input type="text" placeholder="Search items...">
-      </div>
-    </div>
 
     <div class="lf-divider"></div>
 
     <div class="sidebar-card">
-      <button>View Reports</button>
+      <button type="button" onclick="window.location.href='reports.html'">View Reports</button>
       <p>Access all lost and found reports submitted by users.</p>
     </div>
 
     <div class="lf-divider"></div>
 
     <div class="sidebar-card">
-      <button>Manage Profile</button>
+      <button type="button" onclick="window.location.href='profile.html'">Manage Profile</button>
       <p>Update your account information and personal preferences.</p>
     </div>
 
@@ -89,7 +84,7 @@
   <!-- MAIN CONTENT -->
   <main>
 
-    <h2>Welcome to Your Dashboard, Ange! Find, claim, and announce with Us</h2>
+    <h2 id="dashboard-welcome">Welcome to Your Dashboard, Ange! Find, claim, and announce with Us</h2>
 
     <div class="lf-divider"></div>
 
@@ -102,23 +97,7 @@
           <a href="#" class="view-all">View All</a>
         </div>
 
-        <div class="items-list">
-
-          <button class="item-btn">
-            <div class="item-btn-name">HP Laptop</div>
-            <div class="item-btn-location">Library Block A</div>
-          </button>
-
-          <button class="item-btn">
-            <div class="item-btn-name">Student ID Card</div>
-            <div class="item-btn-location">Cafeteria</div>
-          </button>
-
-          <button class="item-btn">
-            <div class="item-btn-name">Room Keys</div>
-            <div class="item-btn-location">Parking</div>
-          </button>
-
+        <div class="items-list" id="recently-lost-list">
         </div>
       </div>
 
@@ -129,23 +108,7 @@
           <a href="#" class="view-all">View All</a>
         </div>
 
-        <div class="items-list">
-
-          <button class="item-btn">
-            <div class="item-btn-name">Samsung Phone</div>
-            <div class="item-btn-location"> Classroom 1</div>
-          </button>
-
-          <button class="item-btn">
-            <div class="item-btn-name">Black Backpack</div>
-            <div class="item-btn-location">big auditorium</div>
-          </button>
-
-          <button class="item-btn">
-            <div class="item-btn-name">black jumper</div>
-            <div class="item-btn-location">football Field</div>
-          </button>
-
+        <div class="items-list" id="recently-found-list">
         </div>
       </div>
 
